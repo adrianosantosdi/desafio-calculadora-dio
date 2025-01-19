@@ -1,11 +1,11 @@
-import React from 'react'
-import styled from 'styled-components'
-import './styles.css'
+import { InputContainer } from './styles'
 
-export const index = () => {
+const Input = ({value}) => {
   return (
-    <div>
+    <InputContainer>
+      <input disabled value={value}/>
+    </InputContainer>
+  );
+};
 
-    </div>
-  )
-}
+export default Input;

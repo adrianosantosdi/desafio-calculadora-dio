@@ -1,10 +1,11 @@
-import React from 'react'
-import './styles.css'
+import { ButtonContainer } from './styles'
 
-export const index = () => {
+const Button = ( {label, onClick}) => {
   return (
-    <div>
+    <ButtonContainer onClick={onClick}>
+      {label}
+    </ButtonContainer>
+  );
+};
 
-    </div>
-  )
-}
+export default Button;
